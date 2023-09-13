@@ -6,16 +6,16 @@ O objetivo aqui é disponibilizar o projeto de backend, onde foi desenvolvido um
 
 Linkendin: https://www.linkedin.com/in/tatianepr/
 
-https://finance-tati.onrender.com
+
 
 ## Principais APIs
 
-1) DELETE - /despesa
-2) GET - /despesa
-3) POST -/despesa
-4) PUT - /despesa e /paga
-5) GET - /despesas
-6) POST - /categoria (cadastrar categorias primeiro)
+1) DELETE - /categoria
+2) GET - /categoria
+3) POST -/categoria
+4) PUT - /categoria 
+5) GET - /categoria
+6) POST - /categoria 
 7) GET - /categorias
 ---
 ## Como executar 
@@ -77,36 +77,3 @@ $ docker run -p 5000:5000 rest-api
 Uma vez executando, para acessar a API, basta abrir o [http://localhost:5000/#/](http://localhost:5000/#/) no navegador.
 
 
-
-### Alguns comandos úteis do Docker
-
->**Para verificar se a imagem foi criada** você pode executar o seguinte comando:
->
->```
->$ docker images
->```
->
-> Caso queira **remover uma imagem**, basta executar o comando:
->```
->$ docker rmi <IMAGE ID>
->```
->Subistituindo o `IMAGE ID` pelo código da imagem
->
->**Para verificar se o container está em exceução** você pode executar o seguinte comando:
->
->```
->$ docker container ls --all
->```
->
-> Caso queira **parar um conatiner**, basta executar o comando:
->```
->$ docker stop <CONTAINER ID>
->```
->Subistituindo o `CONTAINER ID` pelo ID do conatiner
->
->
-> Caso queira **destruir um conatiner**, basta executar o comando:
->```
->$ docker rm <CONTAINER ID>
->```
->Para mais comandos, veja a [documentação do docker](https://docs.docker.com/engine/reference/run/).
