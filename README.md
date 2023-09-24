@@ -14,10 +14,24 @@ Linkendin: https://www.linkedin.com/in/tatianepr/
 2) GET - /categoria
 3) POST -/categoria
 4) PUT - /categoria 
-5) GET - /categoria
-6) POST - /categoria 
-7) GET - /categorias
----
+5) GET - /categoriaID
+6) GET - /categoriaNome
+7) GET - /categoriastipo
+
+## Arquitetura do projeto
+
+Foi desenvolvido um frontend em REACT que chama os dois componentes escritos em Python. 
+
+- Frontend REACT (porta 3000) -> https://github.com/Tatianepr/easybills-front
+- Componente Categoria (porta 5000) -> https://github.com/Tatianepr/easybills_back_categoria (esse)
+- Componente Lançametos (porta 5001) -> https://github.com/Tatianepr/easybills_back_lancamentos 
+
+Além disso, o front-end chama uma API externa abaixo, responsável por fornecer cotações atualizadas do Dólar, Euro e Bicoin.
+
+- Documentação da API Externa -> https://github.com/raniellyferreira/economy-api
+
+<img src='arquitetura.jpg' />
+
 ## Como executar 
 
 
